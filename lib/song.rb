@@ -11,15 +11,15 @@ class Song
   end
 
   def self.create
-    s = self.new
-    s.save
-    s
+    song = self.new
+    song.save
+    song
   end
 
   def self.new_by_name(name)
-    s = self.new
-    s.name = name
-    s
+    song = self.new
+    song.name = name
+    song
   end
 
   def self.create_by_name(name)
