@@ -22,7 +22,7 @@ class Song
     s
   end
 
-  def self.create_by_name
+  def self.create_by_name(name)
     song = self.new
     song.name = name
     @@all << song
@@ -42,7 +42,7 @@ class Song
       end
   end
 
-  def self.alphabetical
+  def self.alphabetical(name)
     @@all.sort_by{|x| x.name}
   end
 
